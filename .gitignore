@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.secret.local
+service-account.json
+*-firebase-adminsdk-*.json
+
+# Dependencies & build
+node_modules/
+functions/lib/
+.firebase/
+
+# Logs & OS
+*.log
+.DS_Store
+
+# Large local data (process with pipeline/)
+data/
+Raw-Data/
+
+# Client apps (separate deploy)
+web/
+mobile/

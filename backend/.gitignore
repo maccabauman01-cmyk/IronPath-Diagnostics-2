@@ -1,0 +1,26 @@
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+pubsub-debug.log
+database-debug.log
+
+# Secrets & local config
+.env
+.env.*
+!.env.example
+functions/.secret.local
+.firebaserc
+*-firebase-adminsdk-*.json
+service-account.json
+
+# Dependencies
+node_modules/
+
+# Build output
+functions/lib/
+
+# OS / editor
+.DS_Store
+*.log

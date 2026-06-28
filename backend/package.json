@@ -1,0 +1,26 @@
+{
+  "name": "ironpath-backend",
+  "private": true,
+  "description": "IronPath Diagnostics — Firebase Auth + Cloud Functions (Milestone 3)",
+  "scripts": {
+    "build": "npm --prefix functions run build",
+    "dev": "npm --prefix dev-server run start",
+    "dev:watch": "npm --prefix dev-server run dev",
+    "web": "npm --prefix ../web run dev",
+    "web:build": "npm --prefix ../web run build",
+    "ask": "npm --prefix dev-server run ask --",
+    "serve": "firebase emulators:start --only functions,auth",
+    "test:local": "node scripts/test-local.mjs",
+    "test:local:quick": "node scripts/test-local.mjs --skip-chat",
+    "deploy": "npm run sync-env && firebase deploy --only functions,hosting",
+    "deploy:functions": "npm run sync-env && firebase deploy --only functions",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "sync-env": "node scripts/sync-functions-env.mjs",
+    "deploy:rules": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "create-user": "node scripts/create-mvp-user.mjs"
+  },
+  "devDependencies": {
+    "firebase-tools": "^14.0.0"
+  }
+}
